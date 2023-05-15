@@ -185,7 +185,7 @@ If everything was successful, it should look like this:
 
 On the other hand, it would go like this:
 
-[![Jest Test Custom Sign Up with error](https://github.com/noahzmr/react-chat)](https://user-images.githubusercontent.com/65290559/231503927-420df5b3-db1d-43f0-a020-ead36c374a02.mp4)
+[![Jest Test Custom Sign Up with error](https://github.com/noahzmr/react-chat)](https://github.com/noahzmr/react-chat/assets/65290559/88ee83d3-a363-42fa-9755-8d1378c870bf)
 
 ##### <strong>First Login</strong>
 
@@ -196,11 +196,13 @@ The login procedure is relatively simple straigth forward:
 
 ###### <strong>Without OTP</strong>
 
-https://user-images.githubusercontent.com/65290559/232424492-0d51007b-f9a5-4e6b-9349-90fce8ae6648.mp4
+
+https://github.com/noahzmr/react-chat/assets/65290559/5f3101ed-305d-4111-85ee-da1b751c4b82
+
 
 ###### <strong>With OTP</strong>
 
-https://user-images.githubusercontent.com/65290559/232449425-a71ed0d7-3109-484c-b2f9-de80c7d9de08.mp4
+https://github.com/noahzmr/react-chat/assets/65290559/db41646b-3975-4524-8270-ee13af7cf28e
 
 #### <strong>Keycloak</strong>
 
@@ -291,17 +293,17 @@ More information can be found [here](https://myaccount.google.com/lesssecureapps
 
 Sign Up:
 
-[![Jest Test Keycloak Sign Up](https://github.com/noahzmr/react-chat)](https://user-images.githubusercontent.com/65290559/231406405-fe9ecf8d-d5a4-4453-99e5-b2a643e665dc.mp4)
+[![Jest Test Keycloak Sign Up](https://github.com/noahzmr/react-chat)](https://github.com/noahzmr/react-chat/assets/65290559/8dfc08f9-c94d-4096-9a03-9948c3b32837)
 
 Sign In:
 
-https://user-images.githubusercontent.com/65290559/232460582-a1dd734e-9ac1-42df-a19b-5df080226534.mp4
+https://github.com/noahzmr/react-chat/assets/65290559/5e939eeb-cca1-4ca3-9dc8-988eb75773bf
 
 ### <strong>Profile</strong>
 
 Now that we have finished registering, we can customize our profile if desired.
 
-https://user-images.githubusercontent.com/65290559/232544630-48e206b7-2772-4cb8-9c69-233eba59da8a.mp4
+https://github.com/noahzmr/react-chat/assets/65290559/a48ee7b7-6ba0-472b-86ca-fce994f48204
 
 - [x] Information about the user.
   - [x] Socket Id.
@@ -326,7 +328,7 @@ https://user-images.githubusercontent.com/65290559/232544630-48e206b7-2772-4cb8-
 
 If we do not want to write in one of the existing groups we can also create a new Direct Messager.
 
-https://user-images.githubusercontent.com/65290559/232568572-5744bb37-2afd-4c6a-a25c-617fb9169185.mp4
+https://github.com/noahzmr/react-chat/assets/65290559/5436f767-4b15-4705-a122-8820b94f872e
 
 - [x] Private chat rooms between individual users.
   - [x] Be able to create new ones.
