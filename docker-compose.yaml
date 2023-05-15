@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+
+  # MariaDB Setup
+  db:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./sql/noerkelit_chat.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - chat
+    env_file:
+      - ./backend/.env
+
+  #Min.IO
+  minioserver:
+    image: quay.io/minio/minio:RELEASE.2022-11-11T03-44-20Z
+    restart: always
+    command: server /data --console-address ":9001"
+    ports:
+      - 9001:9001
+      - 9000:9000
+    depends_on:
+      - db
+    networks:
+      - chat
+    env_file:
+      - ./backend/.env
+
+  # Simple UI for Database
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    networks:
+      - chat
+
+  # Start the Backendserver, who hosted the frontend
+  fullstack:
+    image: Docker.autonubil.net/noerkelit/chat/backend
+    restart: always
+    ports:
+      - 10000:10000
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+      - adminer
+      - minioserver
+    networks:
+      - chat
+    volumes:
+      - ./config/cert/cert.cer:/noerkelit/chat/backend/cert/cert.cer
+      - ./config/cert/key.key:/noerkelit/chat/backend/cert/key.key
+
+
+networks:
+  chat:

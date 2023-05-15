@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./app.js & node ./prometheus/server.js",
+    "lint": "npx npx eslint ./routes --fix && npx npx eslint ./prometheus --fix && npx npx eslint ./config --fix && npx npx eslint ./app.js --fix"
+  },
+  "dependencies": {
+    "@sentry/node": "^7.46.0",
+    "@sentry/tracing": "^7.46.0",
+    "bcrypt": "^5.1.0",
+    "buffer": "^6.0.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.3.0",
+    "dotenv": "^16.0.3",
+    "express": "~4.18.0",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "ip": "^1.1.8",
+    "mariadb": "^3.0.1",
+    "minio": "^7.0.32",
+    "morgan": "~1.10.0",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "peer": "^1.0.0",
+    "prom-client": "^14.1.0",
+    "qrcode": "^1.5.1",
+    "socket.io": "^4.5.4",
+    "speakeasy": "^2.0.0",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "eslint": "^8.29.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.6",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

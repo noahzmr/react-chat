@@ -1,0 +1,42 @@
+{
+  "clientId": "noerkelit_chat",
+  "name": "NoerkelIT Chat",
+  "description": "",
+  "rootUrl": "https://demo.noerkelit.online:3001/*",
+  "adminUrl": "",
+  "baseUrl": "https://demo.noerkelit.online:3001/*",
+  "surrogateAuthRequired": false,
+  "enabled": true,
+  "alwaysDisplayInConsole": false,
+  "clientAuthenticatorType": "client-secret",
+  "redirectUris": ["https://demo.noerkelit.online:3001/*"],
+  "webOrigins": ["https://demo.noerkelit.online:3001/*"],
+  "notBefore": 0,
+  "bearerOnly": false,
+  "consentRequired": false,
+  "standardFlowEnabled": true,
+  "implicitFlowEnabled": false,
+  "directAccessGrantsEnabled": false,
+  "serviceAccountsEnabled": false,
+  "publicClient": true,
+  "frontchannelLogout": false,
+  "protocol": "openid-connect",
+  "attributes": {
+    "oidc.ciba.grant.enabled": "false",
+    "backchannel.logout.session.required": "true",
+    "post.logout.redirect.uris": "https://demo.noerkelit.online:3001/*",
+    "oauth2.device.authorization.grant.enabled": "false",
+    "display.on.consent.screen": "false",
+    "backchannel.logout.revoke.offline.tokens": "false"
+  },
+  "authenticationFlowBindingOverrides": {},
+  "fullScopeAllowed": true,
+  "nodeReRegistrationTimeout": -1,
+  "defaultClientScopes": ["web-origins", "acr", "roles", "profile", "email"],
+  "optionalClientScopes": ["address", "phone", "offline_access", "microprofile-jwt"],
+  "access": {
+    "view": true,
+    "configure": true,
+    "manage": true
+  }
+}

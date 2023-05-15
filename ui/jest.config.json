@@ -1,0 +1,17 @@
+{
+  "testEnvironment": "jest-environment-selenium",
+  "testRegex": "src/.*\\.(test|spec)?\\.(js|ts|tsx|jsx)$",
+  "setupFilesAfterEnv": ["jest-environment-selenium/dist/setup.js"],
+  "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx", "node"],
+  "testEnvironmentOptions": {
+    "capabilities": {
+      "browserName": "chrome",
+      "pageLoadStrategy": "normal"
+    }
+  },
+  "moduleNameMapper": {
+    "\\.(s?css|less)$": "identity-obj-proxy"
+  },
+  "collectCoverage": true,
+  "verbose": true
+}

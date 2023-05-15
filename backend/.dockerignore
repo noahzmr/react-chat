@@ -1,0 +1,9 @@
+node_modules
+**/node_modules
+.env
+**./cert
+**/node_modules
+**/build
+**npm-debug.log*
+**/*.cer
+**/*.key

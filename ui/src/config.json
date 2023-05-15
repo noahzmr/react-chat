@@ -1,0 +1,11 @@
+{
+  "SENTRY_DSN": "",
+  "KC_URL": "",
+  "KC_REALM": "",
+  "KC_CLIENT": "",
+  "JEST_CHAT_ID": "user_106",
+  "JEST_GITHUB_USER": "",
+  "JEST_GITHUB_PASSWORD": "",
+  "JEST_OUTLOOK_USER":"",
+  "JEST_OUTLOOK_PASSWORD":""
+}
