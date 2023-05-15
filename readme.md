@@ -144,6 +144,8 @@ Currently it is still the first version and has minor bugs, with future versions
 [![Vault](https://img.shields.io/badge/Vault-%2320232a.svg?style=for-the-badge&logo=Vault&logoColor=%2361DAFB)](https://www.vaultproject.io/)
 [![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
 
+In future version the custom login will be abolished, it will get its own DIY repo. Here everything will be switched purely to Keycloak.
+
 ## Functions
 
 ### <strong>Login</strong>
@@ -196,9 +198,7 @@ The login procedure is relatively simple straigth forward:
 
 ###### <strong>Without OTP</strong>
 
-
 https://github.com/noahzmr/react-chat/assets/65290559/5f3101ed-305d-4111-85ee-da1b751c4b82
-
 
 ###### <strong>With OTP</strong>
 
